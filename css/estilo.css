@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 1.5em;
+  background-color: white;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 500;
+}
+
+.contentCard {
+  font-family: "Quicksand", sans-serif;
+}
+.contentCard .col {
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 4s ease;
+}
+.contentCard .col .col:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card-title {
+  font-weight: 900;
+}
+
+.card {
+  height: 210px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilo.css.map */
