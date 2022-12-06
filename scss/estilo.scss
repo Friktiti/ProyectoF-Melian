@@ -1,26 +1,28 @@
-* {
-    box-sizing: border-box;
-}
+
 
 body {
-    padding: 0 1.5em;
     background-color: white;
 }
 
 h1 {
     font-size: 5em;
-    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .contentCard {
     font-family: 'Quicksand', sans-serif;
+    padding-bottom: 50px;
+    
 
     .col {
         border-radius: 6px;
         background: white;
         box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
         cursor: default;
-        transition: all 4s ease;
+        transition: all 1s ease;
+        
 
         &:hover {
             box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -28,18 +30,75 @@ h1 {
 
             .card-title {
                 font-weight: 900;
-
-
-            
             }
         }
     }
 }  
 
+.piePagina {
+    width: 100%;
+    background-color: black;
+    padding-left: 0%;
 
+    .grupo1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
 
+        .imgLog {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            .imagen {
+                width: 600px;
+                height: 300px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
 
+.box {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+        color: #efefef;
+    }
+}
+
+.grupo2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+
+    small {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .piePagina {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
 
 
 
