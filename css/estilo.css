@@ -52,6 +52,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .box p {
   color: #E4E5F1;
@@ -230,6 +231,49 @@ h1 {
   .contactInfo p {
     text-align: left;
     padding: 1em;
+  }
+}
+/*PRODUCTOS*/
+.containProduct {
+  padding: 3em;
+}
+.containProduct .containFood {
+  background: #FAEAEF;
+  border-bottom: 5px double black;
+  border-top: 5px double black;
+  border-left: 5px double black;
+  border-right: 5px double black;
+  border-radius: 6px;
+}
+.containProduct .containFood .positionProduct {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  text-align: center;
+}
+.containProduct .containFood .positionProduct .allContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containProduct .containFood .positionProduct .allContent p {
+  padding: 2em;
+}
+
+@media (max-width: 1000px) {
+  .containProduct {
+    padding: 1em;
+  }
+  .containFood {
+    border-bottom: 2px double black;
+    border-top: 2px double black;
+    border-left: 2px double black;
+    border-right: 2px double black;
+    border-radius: 3px;
+  }
+  .positionProduct {
+    display: flex;
+    flex-direction: column;
   }
 }
 
