@@ -1,22 +1,23 @@
 body {
-  background-color: white;
+  background: linear-gradient(to right bottom, #ece9e6, #ffffff);
+  background-image: url(../img/image7.png);
 }
 
 h1 {
-  font-size: 5em;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  height: 370px;
 }
 
+/*INDEX CARDS*/
 .contentCard {
   font-family: "Quicksand", sans-serif;
   padding-bottom: 50px;
 }
 .contentCard .col {
   border-radius: 6px;
-  background: white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
   cursor: default;
   transition: all 1s ease;
 }
@@ -28,31 +29,20 @@ h1 {
   font-weight: 900;
 }
 
+/*FOOTER*/
 .piePagina {
   width: 100%;
   background-color: black;
-  padding-left: 0%;
+  margin-top: 50px;
+  font-family: "Quicksand", sans-serif;
 }
 .piePagina .grupo1 {
-  width: 100%;
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
 }
-.piePagina .grupo1 .imgLog {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.piePagina .grupo1 .imgLog .imagen {
-  width: 600px;
-  height: 300px;
-  border-radius: 6px;
+
+.imagen {
+  width: 100px;
 }
 
 .box {
@@ -61,15 +51,14 @@ h1 {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 }
 .box p {
-  color: #efefef;
+  color: #E4E5F1;
 }
 
 .grupo2 {
-  background-color: #0a1a2a;
+  background-color: #010911;
   padding: 15px 10px;
   text-align: center;
   color: white;
@@ -78,12 +67,169 @@ h1 {
   font-size: 15px;
 }
 
-@media screen and (max-width: 800px) {
-  .piePagina {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
+/*SOCIAL BAR*/
+.redSocial {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+.redSocial ul {
+  list-style: none;
+}
+
+.redSocial ul li a {
+  display: flex;
+  color: white;
+  padding: 0.7rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.redSocial ul li .bi-facebook {
+  background: #3b5998;
+  border-top-left-radius: 6px;
+}
+
+.redSocial ul li .bi-twitter {
+  background: #00acee;
+}
+
+.redSocial ul li .bi-instagram {
+  background: linear-gradient(to right bottom, #833ab4, #FD1D1D, #fcb045);
+}
+
+.redSocial ul li .bi-whatsapp {
+  background: linear-gradient(to left bottom, #2BB741, #25D366);
+}
+
+.redSocial ul li .bi-envelope-exclamation-fill {
+  background: orange;
+  border-bottom-left-radius: 6px;
+}
+
+.redSocial ul li a:hover {
+  padding: 10px 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.42);
+}
+
+@media (max-width: 700px) {
+  .redSocial {
+    position: fixed;
+    font-size: 1em;
+  }
+  .redSocial ul li a:hover {
+    background-color: black;
+    box-shadow: 0 0 10 rgb(0, 0, 0);
+  }
+}
+/*CONTACTO*/
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  font-family: "Quicksand", sans-serif;
+}
+
+.contentContact {
+  font-weight: 1000;
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contactWrapper {
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+  background-color: white;
+}
+
+.contactForm form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contactForm form .block {
+  grid-column: 1/3;
+}
+
+.contactForm form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contactForm form button,
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #d63031;
+}
+
+.contactForm form button {
+  background: #b70e21;
+  color: #000;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contactForm form button:hover,
+.contactForm form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contactInfo {
+  background: black;
+  color: white;
+}
+
+.contactInfo h2 {
+  font-size: 20px;
+}
+
+.contactInfo h2,
+.contactInfo ul,
+.contactInfo p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contactInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactInfo ul li {
+  padding: 0.3em;
+}
+
+@media (min-width: 700px) {
+  .body {
+    padding: 0.4rem;
+  }
+  .contactWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contactInfo {
+    padding: 3em;
+  }
+  .contactInfo h4,
+  .contactInfo ul,
+  .contactInfo p {
+    text-align: left;
+    padding: 1em;
   }
 }
 
