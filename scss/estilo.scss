@@ -1,7 +1,6 @@
 body {
     background: linear-gradient(to right bottom, #ece9e6, #ffffff);
     background-image: url(../img/image7.png);
-    
 }
 
 h1 {
@@ -284,7 +283,7 @@ h1 {
                 p {
                     padding: 2em;
                 }
-             }
+            }
         }   
     }
 }
@@ -308,3 +307,45 @@ h1 {
     }
 }
 
+/* CAROUSEL */
+
+.containerCarousel {
+    background: #FAEAEF;
+    border-bottom: 5px double black;
+    border-top: 5px double black;
+    border-left: 5px double black;
+    border-right: 5px double black;
+    border-radius: 6px;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 15%;
+
+    .fixP {
+        padding-top: 3em;
+        display: flex;
+        text-align: left;
+    }
+}
+
+/*TEXTO QUIENES SOMOS*/
+
+.whoText {
+    background: #FAEAEF;
+    border-bottom: 5px double black;
+    border-top: 5px double black;
+    border-left: 5px double black;
+    border-right: 5px double black;
+    border-radius: 6px;
+    margin-left: 10em;
+    margin-right: 10em;
+
+    .whoP {
+        padding-left: 15%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 15%;
+        display: flex;
+        text-align: center;
+    }
+}
