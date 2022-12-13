@@ -25,8 +25,14 @@ h1 {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
-.contentCard .col:hover .card-title {
-  font-weight: 900;
+
+.card-body a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.card-body a:hover {
+  color: orange;
 }
 
 /*FOOTER*/
@@ -256,8 +262,8 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.containProduct .containFood .positionProduct .allContent p {
-  padding: 2em;
+.containProduct .containFood .positionProduct .allContent .positionText {
+  padding: 3em;
 }
 
 @media (max-width: 1000px) {
@@ -307,12 +313,9 @@ h1 {
   margin-right: 10em;
 }
 .whoText .whoP {
-  padding-left: 15%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-right: 15%;
+  padding: 3em;
   display: flex;
-  text-align: center;
+  text-align: left;
 }
 
 /*# sourceMappingURL=estilo.css.map */
