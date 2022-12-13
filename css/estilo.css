@@ -318,4 +318,14 @@ h1 {
   text-align: left;
 }
 
+@media (max-width: 1000px) {
+  .whoText {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .whoP {
+    padding: 1em;
+  }
+}
+
 /*# sourceMappingURL=estilo.css.map */
