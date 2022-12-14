@@ -3,6 +3,9 @@ body {
     background-image: url(../img/image7.png);
 }
 
+/*PARCIALS*/
+@import "variables";
+
 h1 {
     display: flex;
     justify-content: center;
@@ -12,12 +15,12 @@ h1 {
 /*INDEX CARDS*/
 
 .contentCard {
-    font-family: 'Quicksand', sans-serif;
+    font-family: $font-family;
     padding-bottom: 50px;
 
 
     .col {
-        border-radius: 6px;
+        border-radius: $border-radius;
         background-color: white;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
         cursor: default;
@@ -33,7 +36,7 @@ h1 {
 .card-body a {
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: $color-font;
     
    &:hover {
         color: orange;
@@ -47,7 +50,7 @@ h1 {
     width: 100%;
     background-color: black;
     margin-top: 50px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: $font-family;
 
 
     .grupo1 {
@@ -61,7 +64,7 @@ h1 {
 }
 
 .box {
-    color: white;
+    color: $color-fontwo;
     margin-bottom: 25px;
     font-size: 20px;
     display: flex;
@@ -105,7 +108,7 @@ h1 {
 
 .redSocial ul li a {
     display: flex;
-    color: white;
+    color: $color-fontwo;
     padding: .7rem;
     text-decoration: none;
     transition: all .5s ease;
@@ -113,7 +116,7 @@ h1 {
 
 .redSocial ul li .bi-facebook {
     background: #3b5998;
-    border-top-left-radius: 6px;
+    border-top-left-radius: $border-radius;
 }
 
 .redSocial ul li .bi-twitter {
@@ -136,7 +139,7 @@ h1 {
 
 .redSocial ul li a:hover {
     padding: 10px 30px;
-    border-radius: 6px;
+    border-radius: $border-radius;
     box-shadow: 0 0 5 rgba(0, 0, 0, 0.42);
 }
 
@@ -159,7 +162,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
-    font-family: 'Quicksand', sans-serif;
+    font-family: $font-family;
 }
 
 .contentContact {
@@ -201,7 +204,7 @@ h1 {
 
 .contactForm form button {
     background: #b70e21;
-    color: #000;
+    color: $color-font;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -210,14 +213,14 @@ h1 {
 .contactForm form button:hover,
 .contactForm form button:focus {
     background: #d63031;
-    color: #fff;
+    color: $color-fontwo;
     transition: background-color 1s ease-out;
     outline: 0;
 }
 
 .contactInfo {
     background: black;
-    color: white;
+    color: $color-fontwo;
 }
 
 .contactInfo h2 {
@@ -269,11 +272,11 @@ h1 {
 
     .containFood {
         background: #FAEAEF;
-        border-bottom: 5px double black;
-        border-top: 5px double black;
-        border-left: 5px double black;
-        border-right: 5px double black;
-        border-radius: 6px;
+        border-bottom: $bordes;
+        border-top: $bordes;
+        border-left: $bordes;
+        border-right: $bordes;
+        border-radius: $border-radius;
     
             .positionProduct {
             display: flex;
@@ -288,6 +291,7 @@ h1 {
 
                     .positionText {
                         padding: 3em;
+                        font-family: $font-family;
                     }
                 }
             }
@@ -317,11 +321,11 @@ h1 {
 
 .containerCarousel {
     background: #FAEAEF;
-    border-bottom: 5px double black;
-    border-top: 5px double black;
-    border-left: 5px double black;
-    border-right: 5px double black;
-    border-radius: 6px;
+    border-bottom: $bordes;
+    border-top: $bordes;
+    border-left: $bordes;
+    border-right: $bordes;
+    border-radius: $border-radius;
     padding-left: 15%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -331,6 +335,7 @@ h1 {
         padding-top: 3em;
         display: flex;
         text-align: left;
+        font-family: $font-family;
     }
 }
 
@@ -338,11 +343,11 @@ h1 {
 
 .whoText {
     background: #FAEAEF;
-    border-bottom: 5px double black;
-    border-top: 5px double black;
-    border-left: 5px double black;
-    border-right: 5px double black;
-    border-radius: 6px;
+    border-bottom: $bordes;
+    border-top: $bordes;
+    border-left: $bordes;
+    border-right: $bordes;
+    border-radius: $border-radius;
     margin-left: 10em;
     margin-right: 10em;
 
